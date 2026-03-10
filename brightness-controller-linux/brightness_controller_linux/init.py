@@ -23,6 +23,8 @@ from os import path, remove, makedirs
 from qtpy import QtGui, QtCore, QtWidgets
 from qtpy.QtCore import QSize, Qt
 from qtpy.QtGui import QIcon
+# Add language translation
+from PyQt5.QtCore import QTranslator, QLocale, QLibraryInfo
 from brightness_controller_linux.util.QtSingleApplication import QtSingleApplication
 from brightness_controller_linux.ui.mainwindow import Ui_MainWindow
 from brightness_controller_linux.ui.license import Ui_Form as License_Ui_Form
@@ -900,6 +902,10 @@ def main():
     APP = QtSingleApplication(UUID, sys.argv)
     if APP.isRunning():
         sys.exit(0)
+# Add language translation
+    translator = QTranslator()
+    translator.load("brightness-controller_fr.qm", "/usr/bin/translations")
+    APP.installTranslator(translator)		
     WINDOW = MyApplication()
     WINDOW.APP = APP
     APP.setActivationWindow(WINDOW)
