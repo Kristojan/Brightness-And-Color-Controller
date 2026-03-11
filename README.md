@@ -10,11 +10,11 @@ lupdate . -ts brightness-controller_ll-LL.ts
 ll_LL is the abbreviation for your country's language (example: de_DE for deutchland, en_US for north Aaerica, etc...) 
   - Translate with Qt Linguist:
 ```bash
-linguist brighness-controller_ll-LL.ts
+linguist brightness-controller_ll-LL.ts
 ```
   - Generate .qm type file:
 ```bash
-lrelease brighness-controller_ll-LL.ts
+lrelease brightness-controller_ll-LL.ts
 ```
 To finalize people must generate a type .deb package wirh locale translation standard, or other builds...
 
