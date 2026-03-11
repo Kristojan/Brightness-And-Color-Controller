@@ -904,8 +904,12 @@ def main():
         sys.exit(0)
 # Add language translation
     translator = QTranslator()
-    translator.load("brightness-controller_fr.qm", "/usr/bin/translations")
-    APP.installTranslator(translator)		
+    locale = QLocale.system().name()
+    translation_file = f"brightness-controller_{locale}.qm"
+    translation_path = "/usr/bin/translations" 
+    translator.load(translation_file, translation_path)
+    if translator.load(translation_file, translation_path):		
+        APP.installTranslator(translator)
     WINDOW = MyApplication()
     WINDOW.APP = APP
     APP.setActivationWindow(WINDOW)
