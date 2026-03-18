@@ -89,3 +89,23 @@ sudo apt-get install brightness-controller-simple
 Further details are available [here](http://lordamit.github.io/Brightness/)
 
 Please note that the simple version may not work properly in newer versions of Linux. Unfortunately we can not provide any more updates to the simple version.
+
+## A fork of version 2.4 of Brightness Controller for Linux.
+It supports two displays and also allows changing the color temperature across displays in all language system.
+
+To generate new .ts type  files with your language, your can do it:
+To generate new .ts type  files with your language, with qt5 tools your can do it:
+  - From /brightness-controller-linux/brightness_controller_linux/ui :
+```bash
+lupdate . -ts brightness-controller_ll-LL.ts
+```
+ll_LL is the abbreviation for your country's language (example: de_DE for deutchland, en_US for north Aaerica, etc...) 
+  - Translate with Qt Linguist:
+```bash
+linguist brightness-controller_ll-LL.ts
+```
+  - Generate .qm type file:
+```bash
+lrelease brightness-controller_ll-LL.ts
+```
+To finalize people must generate a type .deb package wirh locale translation standard, or other builds...
