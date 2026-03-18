@@ -99,7 +99,7 @@ To generate new .ts type  files with your language, with qt5 tools your can do i
 ```bash
 lupdate . -ts brightness-controller_ll-LL.ts
 ```
-ll_LL is the abbreviation for your country's language (example: de_DE for deutchland, en_US for north Aaerica, etc...) 
+ll_LL is the abbreviation for your country's language (example: de_DE for deutchland, en_US for north America, fr_CA for Canada, etc...) 
   - Translate with Qt Linguist:
 ```bash
 linguist brightness-controller_ll-LL.ts
