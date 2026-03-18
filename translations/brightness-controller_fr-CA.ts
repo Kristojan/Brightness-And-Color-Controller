@@ -316,12 +316,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../../../usr/share/brightness-controller/ui/mainwindow.ui" line="469"/>
         <source>&amp;Save current settings</source>
-        <translation>Enregistrez vos &amp;paramètres actuels</translation>
+        <translation>Enregistrez les &amp;paramètres actuels</translation>
     </message>
     <message>
         <location filename="../../../usr/share/brightness-controller/ui/mainwindow.ui" line="477"/>
         <source>&amp;Load settings</source>
-        <translation>&amp;Chargez vos paramètres</translation>
+        <translation>&amp;Chargez les paramètres</translation>
     </message>
     <message>
         <location filename="../../../usr/share/brightness-controller/ui/mainwindow.ui" line="488"/>
@@ -331,12 +331,12 @@ p, li { white-space: pre-wrap; }
     <message>
         <location filename="../../../usr/share/brightness-controller/ui/mainwindow.ui" line="493"/>
         <source>Save current as default</source>
-        <translation>Enregistrez vos paramètres par &amp;défaut</translation>
+        <translation>Enregistrez les paramètres par &amp;défaut</translation>
     </message>
     <message>
         <location filename="../../../usr/share/brightness-controller/ui/mainwindow.ui" line="498"/>
         <source>&amp;Clear default settings</source>
-        <translation type="unfinished">&amp;Supprimez vos paramètres par défaut</translation>
+        <translation type="unfinished">&amp;Supprimez les paramètres par défaut</translation>
     </message>
 </context>
 </TS>
