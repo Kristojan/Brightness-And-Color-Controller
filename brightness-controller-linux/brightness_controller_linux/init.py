@@ -240,7 +240,11 @@ class MyApplication(QtWidgets.QMainWindow):
         self.tray_icon.activated.connect(self._icon_activated)
         self.tray_icon.setContextMenu(self.tray_menu)
         self.tray_icon.show()
-
+		
+    def trayClose(self):
+        # Clean and immediate shutdown of the app
+        QtWidgets.QApplication.quit()
+	
     def _icon_activated(self, reason):
         # can't seem to get double click?
         if reason in (QtWidgets.QSystemTrayIcon.Trigger,
