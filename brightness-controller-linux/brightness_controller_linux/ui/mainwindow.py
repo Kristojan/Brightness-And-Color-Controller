@@ -318,7 +318,6 @@ class Ui_MainWindow(object):
         self.comboBox.setItemText(8, QCoreApplication.translate("MainWindow", u"7000K Overcast Sky", None))
         self.comboBox.setItemText(9, QCoreApplication.translate("MainWindow", u"20000K Clear Blue Sky", None))
 
-        self.ddcutilsNotInstalled.setText(QCoreApplication.translate("MainWindow", u"Install ddcutil for direct control", None))
         self.directControlBox.setText(QCoreApplication.translate("MainWindow", u"Direct Control (DDC)", None))
         self.menuFile.setTitle(QCoreApplication.translate("MainWindow", u"&File", None))
         self.menuHelp.setTitle(QCoreApplication.translate("MainWindow", u"&Help", None))
