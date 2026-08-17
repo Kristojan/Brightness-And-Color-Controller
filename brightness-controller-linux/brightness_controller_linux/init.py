@@ -97,7 +97,8 @@ class MyApplication(QtWidgets.QMainWindow):
                             getNames[i].split(":")[1].strip())
 
                 if "Invalid display" in getNames[i]:
-                    self.displayNames.append(getNames[i].strip())
+					# The incompatibility information is added and replaces the concept of invalidity
+                    self.displayNames.append("Not ddc/ci")
 
             for i in range(len(self.displayNames)):
                 if not self.displayNames[i] == "Invalid display":
