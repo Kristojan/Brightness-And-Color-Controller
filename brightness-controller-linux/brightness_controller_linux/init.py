@@ -217,14 +217,18 @@ class MyApplication(QtWidgets.QMainWindow):
         # Setup system tray
         self.tray_menu = QtWidgets.QMenu(parent)
 
-        show_action = QtWidgets.QAction("Show", self,
-                                        statusTip="Show",
+# Minimize menu options to only show Brightness Controller window		
+#        show_action = QtWidgets.QAction("Show", self,
+#                                        statusTip="Show",
+#                                        triggered=self.show)
+        show_action = QtWidgets.QAction("Bightness Controller", self,
+                                        statusTip="Brightness Controller",
                                         triggered=self.show)
-        quit_action = QtWidgets.QAction("Quit", self,
-                                        statusTip="Quit",
-                                        triggered=self.trayClose)
+#		quit_action = QtWidgets.QAction("Quit", self,
+#                                        statusTip="Quit",
+#                                        triggered=self.trayClose)
         self.tray_menu.addAction(show_action)
-        self.tray_menu.addAction(quit_action)
+#        self.tray_menu.addAction(quit_action)
 
         icon = QtGui.QIcon()
         # icon_path = "icons/brightness-controller.svg"
