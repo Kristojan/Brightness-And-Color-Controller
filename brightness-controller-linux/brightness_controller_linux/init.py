@@ -242,7 +242,7 @@ class MyApplication(QtWidgets.QMainWindow):
                        QtGui.QIcon.Off)
 
         self.tray_icon = QtWidgets.QSystemTrayIcon(icon, self)
-        self.tray_icon.activated.connect(self._icon_activated)
+#        self.tray_icon.activated.connect(self._icon_activated)
         self.tray_icon.setContextMenu(self.tray_menu)
         self.tray_icon.show()
 		
